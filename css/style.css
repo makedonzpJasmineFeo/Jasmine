@@ -1641,7 +1641,6 @@ body.lightbox-open {
 
 /* Курсор-лупа на кликабельных фото */
 #mainRoomImage,
-.room-card__image img,
 .room-gallery-thumbs .thumb {
   cursor: zoom-in;
 }
@@ -1838,4 +1837,22 @@ body .socials--dark-text .socials__link:hover {
     color: #ffffff !important;
     background-color: rgba(255, 255, 255, 0.12) !important;
   }
+}
+/* =========================================
+   КАРТОЧКА НОМЕРА — вся кликабельна
+   ========================================= */
+.room-card {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Растягиваем ссылку «Подробнее» на всю карточку.
+   ВАЖНО: у .room-card__link НЕ должно быть position: relative,
+   иначе ::after растянется только до кнопки */
+.room-card__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  cursor: pointer;
 }

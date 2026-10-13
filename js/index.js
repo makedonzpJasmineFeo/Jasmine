@@ -297,6 +297,7 @@ function formatGuests(room) {
   const word = declOfNum(maxGuests, ["гость", "гостя", "гостей"]);
   return `${list.join(", ")} ${word}`;
 }
+
 async function fetchRooms() {
   const response = await fetch("presets/rooms.json");
   if (!response.ok) throw new Error("Не удалось загрузить rooms.json");
@@ -304,9 +305,6 @@ async function fetchRooms() {
   return data.rooms || [];
 }
 
-// =========================================
-// ПРЕВЬЮ НА ГЛАВНОЙ
-// =========================================
 // =========================================
 // ПРЕВЬЮ НА ГЛАВНОЙ — 3 случайных номера
 // с миксом категорий (comfort + standard)
@@ -320,7 +318,6 @@ async function loadRoomsPreview() {
     const preview = pickPreviewRooms(rooms, 3);
     renderRoomsPreview(preview, grid);
     if (window.observeRoomCards) window.observeRoomCards();
-    bindCardLightbox();
   } catch (error) {
     console.error("Ошибка загрузки превью:", error);
     grid.innerHTML = `
@@ -342,7 +339,6 @@ function pickPreviewRooms(rooms, count = 3) {
     const types = room.types || [];
     types.forEach((t) => {
       if (!byType[t]) byType[t] = [];
-      // чтобы одна карточка не попала дважды в разные группы — отметим
       if (!byType[t].includes(room)) byType[t].push(room);
     });
   });
@@ -366,7 +362,7 @@ function pickPreviewRooms(rooms, count = 3) {
     picked.push(shuffledRemaining.pop());
   }
 
-  // 3. Перемешиваем финальный список — чтобы порядок был случайным
+  // 3. Перемешиваем финальный список
   return shuffle(picked);
 }
 
@@ -401,7 +397,7 @@ function renderRoomsPreview(rooms, grid) {
             <span>📐 ${room.area} м²</span>
           </div>
           <p class="room-card__price">от ${formatPrice(room.price)} ₽ <span>/ сутки</span></p>
-          <a href="room.html?slug=${room.slug}" class="btn btn--outline btn--full">Подробнее</a>
+          <a href="room.html?slug=${room.slug}" class="btn btn--outline btn--full room-card__link">Подробнее</a>
         </div>
       </article>
     </div>
@@ -422,7 +418,6 @@ async function loadRooms() {
     renderRooms(rooms, grid);
     initFilters();
     if (window.observeRoomCards) window.observeRoomCards();
-    bindCardLightbox();
   } catch (error) {
     console.error("Ошибка загрузки номеров:", error);
     grid.innerHTML = `
@@ -458,7 +453,7 @@ function renderRooms(rooms, grid) {
             <span>📐 ${room.area} м²</span>
           </div>
           <p class="room-card__price">от ${formatPrice(room.price)} ₽ <span>/ сутки</span></p>
-          <a href="room.html?slug=${room.slug}" class="btn btn--outline btn--full">Подробнее</a>
+          <a href="room.html?slug=${room.slug}" class="btn btn--outline btn--full room-card__link">Подробнее</a>
         </div>
       </article>
     </div>
@@ -688,10 +683,8 @@ function renderSingleRoom(room, container) {
 }
 
 // =========================================
-// ПРИВЯЗКА ЛАЙТБОКСА
+// ПРИВЯЗКА ЛАЙТБОКСА — только для страницы номера
 // =========================================
-
-// Для страницы номера: клик по главному фото → лайтбокс со всей галереей
 function bindRoomLightbox(gallery) {
   const mainImg = document.getElementById("mainRoomImage");
   if (!mainImg) return;
@@ -715,15 +708,6 @@ function bindRoomLightbox(gallery) {
       // Активная миниатюра
       thumbs.forEach((t) => t.classList.remove("active"));
       thumb.classList.add("active");
-    });
-  });
-}
-
-// Для карточек (index.html, apartaments.html): клик по фото → лайтбокс с одним фото
-function bindCardLightbox() {
-  document.querySelectorAll(".room-card__image img").forEach((img) => {
-    img.addEventListener("click", () => {
-      Lightbox.open([img.src], 0);
     });
   });
 }
