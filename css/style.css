@@ -350,10 +350,16 @@ a.btn {
 /* Цвета хедера — ПОСЛЕ скролла */
 .header--scrolled .logo__name,
 .header--scrolled .logo__sub,
-.header--scrolled .nav a,
 .header--scrolled .phone,
 .header--scrolled .burger {
   color: var(--color-primary);
+}
+
+/* Ссылки навигации в закрытом виде — только на десктопе (там они видны) */
+@media (min-width: 993px) {
+  .header--scrolled .nav a {
+    color: var(--color-primary);
+  }
 }
 
 .header:not(.header--scrolled) .btn--primary {
@@ -1186,10 +1192,7 @@ body {
   .nav.active {
     display: flex;
   }
-  .nav a {
-    color: var(--color-primary) !important;
-    font-size: 16px;
-  }
+
   .nav a::after {
     display: none;
   }
@@ -1280,8 +1283,7 @@ body {
    ========================================= */
 
 #room__text,
-#room__sub,
-.room__burger {
+#room__sub {
   color: var(--color-primary) !important;
 }
 
@@ -1290,10 +1292,16 @@ body {
   color: var(--color-primary) !important;
 }
 
-/* И на всякий случай — весь текст внутри хедера на странице номера */
-.page--room .header--scrolled .nav a,
+/* Телефон в хедере на странице номера — тёмный */
 .page--room .header--scrolled .phone {
   color: var(--color-primary) !important;
+}
+
+/* Ссылки навигации — зелёные ТОЛЬКО когда меню закрыто */
+@media (min-width: 993px) {
+  .page--room .header--scrolled .nav a {
+    color: var(--color-primary) !important;
+  }
 }
 
 .page--room .header--scrolled .btn--primary {
@@ -1796,4 +1804,38 @@ body .socials--dark-text .socials__link:hover {
 .socials--dark-text .socials__link--max:hover {
   background-color: #8b00ff !important;
   border-color: #8b00ff !important;
+}
+/* =========================================
+   ФИНАЛЬНЫЙ ФИКС: ссылки в мобильном меню — белые
+   Перебивает всё, включая .page--room
+   ========================================= */
+@media (max-width: 992px) {
+  body .nav.active a,
+  body.page--room .nav.active a,
+  body .header--scrolled .nav.active a,
+  body.page--room .header--scrolled .nav.active a,
+  body .header--scrolled .nav.active a {
+    color: var(--color-white) !important;
+  }
+
+  body .nav.active a:hover,
+  body.page--room .nav.active a:hover {
+    color: var(--color-white) !important;
+    background-color: rgba(255, 255, 255, 0.12) !important;
+  }
+}
+/* =========================================
+   FINAL: белые ссылки в мобильном меню (по ID)
+   ========================================= */
+@media (max-width: 992px) {
+  #mainNav.active a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+
+  #mainNav.active a:hover,
+  #mainNav.active a:focus {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.12) !important;
+  }
 }
