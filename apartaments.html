@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Номера — Гостевой дом Жасмин в Феодосии</title>
+    <meta
+      name="description"
+      content="Уютные номера в гостевом доме Жасмин. Стандарт, Комфорт, Комфорт+. Цены от 2500 ₽."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header header--scrolled">
+      <div class="container">
+        <div class="header__inner">
+          <a href="index.html" class="logo">
+            <div class="logo__block">
+              <img src="/img/logo.png" style="height: 30px" alt="logo" />
+              <div class="logo__text">
+                <span class="logo__name">Жасмин</span>
+                <span class="logo__sub">гостевой дом</span>
+              </div>
+            </div>
+          </a>
+          <nav class="nav">
+            <a href="about.html">О доме</a>
+            <a href="apartaments.html">Номера</a>
+            <a href="facilities.html">Удобства</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+          <div class="header__actions">
+            <a href="tel:+79788854119" class="phone">+7 (978) 885-41-19</a>
+            <a href="tel:+79788854119" class="btn btn--primary">Позвонить</a>
+            <button class="burger" aria-label="Меню">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="hero" style="height: 60vh; min-height: 350px">
+      <div class="hero__bg">
+        <img src="img/rooms-hero.webp" alt="Номера гостевого дома Жасмин" />
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <h1 class="hero__title" style="font-size: 56px">
+          Уютные номера<br />для комфортного отдыха
+        </h1>
+        <p class="hero__desc">Выберите подходящий вариант</p>
+      </div>
+    </section>
+
+    <!-- ROOMS CATALOG -->
+    <section class="section">
+      <div class="container">
+        <!-- Filters -->
+        <div class="filters">
+          <div class="filters__group">
+            <span class="filters__label">Гости:</span>
+            <button
+              class="filter-btn active"
+              data-filter="guests"
+              data-value="all"
+            >
+              Все
+            </button>
+            <button class="filter-btn" data-filter="guests" data-value="2">
+              2 гостя
+            </button>
+            <button class="filter-btn" data-filter="guests" data-value="3">
+              3 гостя
+            </button>
+            <button class="filter-btn" data-filter="guests" data-value="3">
+              4 гостя
+            </button>
+          </div>
+          <div class="filters__group">
+            <span class="filters__label">Категория:</span>
+            <button
+              class="filter-btn active"
+              data-filter="type"
+              data-value="all"
+            >
+              Все
+            </button>
+            <button class="filter-btn" data-filter="type" data-value="standard">
+              Стандарт
+            </button>
+            <button class="filter-btn" data-filter="type" data-value="comfort">
+              Комфорт
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="row" id="rooms-grid">
+          <div
+            class="col-12 text-center"
+            style="padding: 40px; color: var(--color-text-muted)"
+          >
+            Загружаем номера...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section fade-in">
+      <div class="cta-section__bg">
+        <img src="img/cta-bg.webp" alt="Феодосия" />
+      </div>
+      <div class="cta-section__overlay"></div>
+
+      <div class="container">
+        <h2 style="font-size: 42px; margin-bottom: 20px">
+          Не нашли подходящий номер?
+        </h2>
+        <p style="font-size: 18px; margin-bottom: 30px; opacity: 0.9">
+          Позвоните — подберём вариант под ваш запрос
+        </p>
+
+        <div class="d-flex gap-3 justify-content-center flex-wrap mb-4">
+          <a
+            href="tel:+79788854119"
+            class="btn btn--primary"
+            style="padding: 16px 40px; font-size: 16px"
+          >
+            Позвонить: +7 (978) 885-41-19
+          </a>
+        </div>
+
+        <!-- Соцсети — ТЕПЕРЬ ВНУТРИ .container -->
+        <div class="socials socials--cta">
+          <a
+            href="https://vk.ru/id316636938"
+            target="_blank"
+            rel="noopener"
+            class="socials__link socials__link--vk"
+            aria-label="ВКонтакте"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.586-1.496c.597-.189 1.363 1.262 2.176 1.82.548.376.963.293.963.293l1.936-.027s1.013-.063.532-.858c-.039-.065-.28-.585-1.42-1.662-.775-.733-1.302-1.02-1.302-1.02-.291-.207-.207-.3.006-.489 0 0 .764-.747 1.296-1.871.083-.176.135-.313.135-.313.207-.463.043-.719.043-.719-.172-.263-.652-.174-.652-.174l-2.18.013s-.161-.022-.281.049c-.117.07-.191.232-.191.232s-.349.928-.814 1.717c-.982 1.667-1.375 1.755-1.535 1.65-.375-.243-.282-.977-.282-.977s.004-.573.089-1.13c.087-.483.074-.663-.179-.762-.232-.093-1.735-.016-1.735-.016s-.764.006-1.465.348c-.424.244-.513.494-.513.494-.088.208.078.185.078.185s.398-.09.597.05c.174.123.197.489.197.489s.285 1.512-.145 1.746c-.256.14-.593-.129-1.271-.975-.508-.65-.916-1.391-1.175-1.895 0 0-.139-.238-.365-.369-.234-.136-.558-.16-.558-.16l-1.619.011s-.245.002-.335.108c-.09.105-.011.338-.011.338s1.283 2.998 2.738 4.509c1.334 1.385 2.85 1.298 2.85 1.298z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://t.me/+79788854119"
+            target="_blank"
+            rel="noopener"
+            class="socials__link socials__link--tg"
+            aria-label="Telegram"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://wa.me/79788854119"
+            target="_blank"
+            rel="noopener"
+            class="socials__link socials__link--wa"
+            aria-label="WhatsApp"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="viber://chat?number=%2B79788854119"
+            class="socials__link socials__link--viber"
+            aria-label="Viber"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M11.4 0C9.473.028 5.333.344 3.02 2.467 1.302 4.187.696 6.7.633 9.817c-.06 3.11.479 5.342 2.188 7.058 1.898 1.905 5.017 2.148 5.017 2.148l.008 2.212s-.033.896.558.98c.71.102 1.142-.46 1.817-1.19.372-.406.882-.985 1.27-1.434 3.5.293 6.19-.377 6.5-.472.706-.226 4.705-.742 5.36-6.038.674-5.467-.325-8.921-2.14-10.474-.55-.473-2.762-1.96-7.34-1.985 0 0-.545-.028-1.42-.023l-.041.001zm.146 1.626c.732-.001 1.212.02 1.212.02 3.886.023 5.83 1.203 6.29 1.6 1.53 1.31 2.29 4.312 1.726 8.92-.549 4.42-3.717 4.72-4.31 4.91-.254.078-2.526.654-5.512.442 0 0-2.191 2.65-2.874 3.322-.109.107-.234.143-.234-.05v-3.42s-2.526-.195-4.074-1.75c-1.42-1.43-1.856-3.229-1.807-5.847.051-2.62.531-4.752 1.955-6.178C6.176 1.99 9.22 1.664 10.88 1.643c.505-.006.898-.003 1.129-.002l-.463-.015zM12.09 4.4a.386.386 0 0 0-.267.118.386.386 0 0 0-.117.268c.002.212.177.38.389.38h.001c1.6.014 2.955.539 3.9 1.508.947.97 1.42 2.343 1.405 3.985a.39.39 0 0 0 .376.4.387.387 0 0 0 .402-.375c.015-1.833-.53-3.41-1.616-4.522-1.085-1.11-2.634-1.717-4.455-1.732h-.018zm-3.119.56a.386.386 0 0 0-.3.135c-.395.44-.742.88-.99 1.35-.247.47-.288.75-.14 1.34.435 1.74 1.194 3.34 2.268 4.75 1.077 1.41 2.376 2.585 3.885 3.498.505.305.98.34 1.43.155.45-.184.85-.532 1.24-.965a.387.387 0 0 0-.038-.549.387.387 0 0 0-.548.038c-.327.36-.617.6-.879.707-.26.107-.46.121-.75-.053-1.36-.822-2.552-1.895-3.548-3.198-.997-1.303-1.68-2.745-2.079-4.34-.076-.306-.04-.396.093-.65.157-.298.428-.65.787-1.047a.387.387 0 0 0-.03-.548.386.386 0 0 0-.301-.118zm4.294 1.756a.388.388 0 0 0-.28.122.387.387 0 0 0-.114.28c.006.208.18.372.388.371h.001c.762.006 1.354.246 1.786.68.43.435.659 1.03.68 1.788a.388.388 0 0 0 .397.373.387.387 0 0 0 .373-.398c-.024-.913-.315-1.71-.915-2.31-.599-.6-1.388-.9-2.29-.906h-.025zm.13 1.74a.386.386 0 0 0-.29.123.386.386 0 0 0-.11.283c.004.209.18.372.389.368.203.002.36.058.462.163.104.105.16.264.161.466a.388.388 0 0 0 .391.38.387.387 0 0 0 .381-.394c-.002-.335-.104-.62-.297-.818-.193-.196-.49-.31-.88-.315h-.208zm-3.486 1.67a.733.733 0 0 0-.682.477l-.001.001-.713 1.951a.733.733 0 0 0 .386.94c.067.03.14.044.212.044h.001a.733.733 0 0 0 .685-.468l.712-1.95a.733.733 0 0 0-.386-.94.734.734 0 0 0-.214-.055z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://max.ru/+79788854119"
+            target="_blank"
+            rel="noopener"
+            class="socials__link socials__link--max"
+            aria-label="MAX"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <text
+                x="12"
+                y="16"
+                font-family="Montserrat, sans-serif"
+                font-size="10"
+                font-weight="700"
+                text-anchor="middle"
+                fill="currentColor"
+              >
+                MAX
+              </text>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4 footer__grid">
+          <div class="col-md-4 footer__logo">
+            <span class="logo__name">Жасмин</span>
+            <span class="logo__sub">гостевой дом</span>
+          </div>
+          <div class="col-md-4">
+            <div class="footer__nav">
+              <a href="index.html">Главная</a>
+              <a href="about.html">О доме</a>
+              <a href="apartaments.html">Номера</a>
+              <a href="facilities.html">Удобства</a>
+              <a href="contacts.html">Контакты</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer__contacts">
+              <a href="tel:+79788854119">+7 (978) 885-41-19</a>
+              <p>Феодосия, ул. Федько, 27-А</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2026 Гостевой дом «Жасмин».</p>
+          <p>
+            <a
+              href="https://t.me/Spichka_AI"
+              target="_blank"
+              rel="noopener"
+              class="dev-link"
+            >
+              связь с разработчиком
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

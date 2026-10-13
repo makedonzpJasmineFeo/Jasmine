@@ -1,0 +1,213 @@
+{
+  "rooms": [
+    {
+      "slug": "room-1",
+      "title": "Двухместный №1",
+      "guests": 2,
+      "guests_filter": [2],
+      "area": 12,
+      "types": ["standard"],
+      "price": 2000,
+      "image": "img/first/1.webp",
+      "gallery": [
+        "img/first/1.webp",
+        "img/first/2.webp",
+        "img/first/3.webp"
+      ],
+      "specs": ["Кондиционер", "Wi-Fi", "Санузел на 2 номера","Телевизор"],
+      "description": "Просторный номер для семьи или небольшой компании. Две отдельные кровати, диван, большие окна и всё необходимое для комфортного отдыха.",
+      "amenities": [
+        "📶 Wi-Fi",
+        "📺 Телевизор",
+        "❄️ Кондиционер",
+        "🛏️ Две кровати, диван",
+        "🧺 Смена белья"
+      ]
+    },
+    {
+      "slug": "room-2",
+      "title": "Двухместный №2",
+      "guests": 2,
+      "guests_filter": [2],
+      "area": 15,
+      "types": ["standard"],
+      "price": 2000,
+      "image": "img/second/1.webp",
+      "gallery": [
+        "img/second/1.webp",
+        "img/second/2.webp",
+        "img/second/3.webp",
+        "img/second/4.webp",
+        "img/second/5.webp"
+      ],
+      "specs": ["Кондиционер", "Wi-Fi", "Санузел на 2 номера","Телевизор"],
+      "description": "Просторный номер для семьи или небольшой компании. Две отдельные кровати, диван, большие окна и всё необходимое для комфортного отдыха.",
+      "amenities": [
+        "📶 Wi-Fi",
+        "📺 Телевизор",
+        "❄️ Кондиционер",
+        "🛏️ Две кровати, диван",
+        "🧺 Смена белья"
+      ]
+    },
+    {
+      "slug": "room-3",
+      "title": "Двухместный №3",
+      "guests": 2,
+      "guests_filter": [2],
+      "area": 12,
+      "types": ["standard"],
+      "price": 2000,
+      "image": "img/third/1.webp",
+      "gallery": [
+        "img/third/1.webp",
+        "img/third/2.webp",
+        "img/third/3.webp",
+        "img/third/4.webp",
+        "img/third/5.webp"
+      ],
+      "specs": ["Кондиционер", "Wi-Fi", "Санузел на 2 номера","Телевизор"],
+      "description": "Светлый и уютный номер с собственной ванной комнатой. Идеально подходит для пар или путешественников. Из окон открывается вид на тихий двор с цветами.",
+      "amenities": [
+        "📶 Wi-Fi",
+        "📺 Телевизор",
+        "❄️ Кондиционер",
+        "🛏️ Двуспальная кровать",
+        "🧺 Смена белья"
+      ]
+    },
+    {
+      "slug": "room-4",
+      "title": "Двухместный №4",
+      "guests": 2,
+      "guests_filter": [2],
+      "area": 12,
+      "types": ["standard"],
+      "price": 2000,
+      "image": "img/fourth/1.webp",
+      "gallery": [
+        "img/fourth/1.webp",
+        "img/fourth/2.webp",
+        "img/fourth/3.webp",
+        "img/fourth/4.webp",
+        "img/fourth/5.webp"
+      ],
+      "specs": ["Кондиционер", "Wi-Fi", "Санузел на 2 номера","Телевизор"],
+      "description": "Просторный номер для семьи или небольшой компании. Две отдельные кровати, диван, большие окна и всё необходимое для комфортного отдыха.",
+      "amenities": [
+        "📶 Wi-Fi",
+        "📺 Телевизор",
+        "❄️ Кондиционер",
+        "🛏️ Две кровати, диван",
+        "🧺 Смена белья"
+      ]
+    },
+    {
+      "slug": "room-5",
+      "title": "Двухместный №5",
+      "guests": 2,
+      "guests_filter": [2],
+      "area": 15,
+      "types": ["standard"],
+      "price": 2000,
+      "image": "img/fifth/1.webp",
+      "gallery": [
+        "img/fifth/1.webp",
+        "img/fifth/2.webp",
+        "img/fifth/3.webp"
+      ],
+      "specs": ["Кондиционер", "Wi-Fi", "Санузел на 2 номера","Телевизор"],
+      "description": "Просторный номер для семьи или небольшой компании. Две отдельные кровати, диван, большие окна и всё необходимое для комфортного отдыха.",
+      "amenities": [
+        "📶 Wi-Fi",
+        "📺 Телевизор",
+        "❄️ Кондиционер",
+        "🛏️ Две кровати, диван",
+        "🧺 Смена белья"
+      ]
+    },
+    {
+      "slug": "room-6",
+      "title": "Двухместный №6",
+      "guests": 2,
+      "guests_filter": [2],
+      "area": 15,
+      "types": ["standard"],
+      "price": 2000,
+      "image": "img/sixth/1.webp",
+      "gallery": [
+        "img/sixth/1.webp",
+        "img/sixth/2.webp",
+        "img/sixth/3.webp",
+        "img/sixth/4.webp",
+        "img/sixth/5.webp",
+        "img/sixth/6.webp"
+      ],
+      "specs": ["Кондиционер", "Wi-Fi", "Санузел на 2 номера","Телевизор"],
+      "description": "Просторный номер для семьи или небольшой компании. Две отдельные кровати, диван, большие окна и всё необходимое для комфортного отдыха.",
+      "amenities": [
+        "📶 Wi-Fi",
+        "📺 Телевизор",
+        "❄️ Кондиционер",
+        "🛏️ Две кровати, диван",
+        "🧺 Смена белья"
+      ]
+    },
+    {
+      "slug": "room-green",
+      "title": "\"Зелёный\"",
+      "guests": 4,
+      "guests_filter": [2, 3, 4],
+      "area": 24,
+      "types": ["comfort"],
+      "price": 3000,
+      "image": "img/green/1.webp",
+      "gallery": [
+        "img/green/1.webp",
+        "img/green/2.webp",
+        "img/green/3.webp",
+        "img/green/4.webp",
+        "img/green/5.webp"
+      ],
+      "specs": ["Кондиционер", "Wi-Fi", "Душевая","Телевизор", "Холодильник"],
+      "description": "Просторный номер для семьи или небольшой компании. Большие окна и всё необходимое для комфортного отдыха.",
+      "amenities": [
+        "📶 Wi-Fi",
+        "📺 Телевизор",
+        "❄️ Кондиционер",
+        "🚿 Собственная душевая",
+        "🛏️ Одна кровать и один диван",
+        "🧺 Смена белья"
+      ]
+    },
+    {
+      "slug": "room-gold",
+      "title": "\"Золотой\"",
+      "guests": 4,
+      "guests_filter": [2, 3, 4],
+      "area": 24,
+      "types": ["comfort"],
+      "price": 3000,
+      "image": "img/gold/1.webp",
+      "gallery": [
+        "img/gold/1.webp",
+        "img/gold/2.webp",
+        "img/gold/3.webp",
+        "img/gold/4.webp",
+        "img/gold/5.webp",
+        "img/gold/6.webp",
+        "img/gold/7.webp"
+      ],
+      "specs": ["Кондиционер", "Wi-Fi", "Душевая","Телевизор", "Холодильник"],
+      "description": "Просторный номер для семьи или небольшой компании. Большие окна и всё необходимое для комфортного отдыха.",
+      "amenities": [
+        "📶 Wi-Fi",
+        "📺 Телевизор",
+        "❄️ Кондиционер",
+        "🚿 Собственная душевая",
+        "🛏️ Одна кровать и один диван",
+        "🧺 Смена белья"
+      ]
+    }  
+  ]
+}
