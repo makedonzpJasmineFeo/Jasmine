@@ -258,8 +258,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.12,
-      rootMargin: "0px 0px -80px 0px",
+      threshold: 0,
+      rootMargin: "0px 0px 150px 0px",
     },
   );
 
