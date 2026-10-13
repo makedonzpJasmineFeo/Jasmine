@@ -396,7 +396,7 @@ function renderRoomsPreview(rooms, grid) {
             <span>👥 ${formatGuests(room)}</span>
             <span>📐 ${room.area} м²</span>
           </div>
-          <p class="room-card__price">от ${formatPrice(room.price)} Руб <span>/ сутки</span></p>
+          <p class="room-card__price">от ${formatPrice(room.price)} <span>Руб / сутки</span></p>
           <a href="room.html?slug=${room.slug}" class="btn btn--outline btn--full room-card__link">Подробнее</a>
         </div>
       </article>
@@ -452,7 +452,7 @@ function renderRooms(rooms, grid) {
             <span>👥 ${formatGuests(room)}</span>
             <span>📐 ${room.area} м²</span>
           </div>
-          <p class="room-card__price">от ${formatPrice(room.price)} Руб <span>/ сутки</span></p>
+          <p class="room-card__price">от ${formatPrice(room.price)} <span>Руб / сутки</span></p>
           <a href="room.html?slug=${room.slug}" class="btn btn--outline btn--full room-card__link">Подробнее</a>
         </div>
       </article>
@@ -650,7 +650,7 @@ function renderSingleRoom(room, container) {
         <div class="room-sidebar">
           <div class="booking-card">
             <p class="booking-card__label">Стоимость</p>
-            <p class="booking-card__price">от ${formatPrice(room.price)} Руб <span>/ сутки</span></p>
+            <p class="booking-card__price">от ${formatPrice(room.price)} <span>Руб / сутки</span></p>
 
             <p class="booking-card__hint">
               Позвоните или напишите — расскажем о наличии и ответим на вопросы
